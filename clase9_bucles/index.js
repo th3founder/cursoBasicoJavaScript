@@ -70,7 +70,7 @@ console.log(contenedor);
 var userInput = prompt("Ingrese un numero");
 
 for (let index = 1; index <= userInput; index++) {
-    let userInput2 = Number(prompt(`Inrese un numero en la caja ${index}`));
+    let userInput2 = Number(prompt(`Inrese una cantidad en la caja ${index}`));
     console.log(userInput2);
     if(contenedor.length === 0){
         contenedor.push(userInput2);
