@@ -26,3 +26,28 @@ for (let index = 1; index <= 30; index++) {
 
 //Vemos nuestro almacen
 console.log(almacen)
+
+
+//Usamos Filter..................
+var annioPickUp = almacen.filter(function(vehiculo){
+    return vehiculo.annio > 2021;  //cuando llamemos el atributo .annio debe ser como esta constuido en el constuctor no el array que lo cotiene
+})
+console.log("Las camionetas ultimo año son",annioPickUp);
+/* Retorna: todos los vehiculos mayores a 2021
+*/
+
+var modeloAhora = almacen.filter(function(vehiculo){
+    return vehiculo.modelo === "Yukon";  //cuando llamemos el atributo .annio debe ser como esta constuido en el constuctor no el array que lo cotiene
+})
+console.log("Las camionetas existentes son",modeloAhora);
+/* Retorna: todos las camionetas llamadas Yukon*/
+
+
+//Usamos map..................
+var mapeoPickUps = almacen.map(function(vehiculo){
+    return vehiculo.modelo;
+})
+console.log("El mapeo existente de modelos es: ",mapeoPickUps);
+/* Retorna: todos las camionetas por modelo*/
+
+
